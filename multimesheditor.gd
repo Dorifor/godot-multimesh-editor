@@ -1,9 +1,9 @@
 @tool
 extends EditorPlugin
 
-const MULTI_MESH_EDITOR = preload("res://addons/multimesheditor/assets/multi_mesh_editor.tscn")
-const MULTI_MESH_PREVIEW = preload("res://addons/multimesheditor/assets/preview.tscn")
-const SPHERE_MAT = preload("res://addons/multimesheditor/assets/preview.material")
+const MULTI_MESH_EDITOR = preload("./assets/multi_mesh_editor.tscn")
+const MULTI_MESH_PREVIEW = preload("./assets/preview.tscn")
+const SPHERE_MAT = preload("./assets/preview.material")
 
 var ui_container: Control
 var selected_multimesh_instance: MultiMeshInstance3D

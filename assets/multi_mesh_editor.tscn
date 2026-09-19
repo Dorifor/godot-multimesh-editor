@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bp6q5yv57tf0y"]
+
+[node name="MultiMeshEditor" type="Control" unique_id=1348823092]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=349136760]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 64.0
+offset_right = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="EditButton" type="Button" parent="HBoxContainer" unique_id=273799506]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Effacer"
+
+[node name="RevertButton" type="Button" parent="HBoxContainer" unique_id=322888813]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Annuler"

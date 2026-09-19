@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cfy6fy7745t5"]
+
+[ext_resource type="Material" uid="uid://b3yaik2b8ruyt" path="res://addons/multimesheditor/assets/preview.material" id="1_wholk"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_4gwum"]
+material = ExtResource("1_wholk")
+
+[node name="Preview" type="Node3D" unique_id=191662389]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1377149169]
+mesh = SubResource("SphereMesh_4gwum")

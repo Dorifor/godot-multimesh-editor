@@ -190,6 +190,7 @@ func _enter_tree() -> void:
 	ui_container.get_node("%EditButton").pressed.connect(start_edit_action)
 	ui_container.get_node("%RevertButton").pressed.connect(start_revert_action)
 	add_control_to_container(EditorPlugin.CONTAINER_SPATIAL_EDITOR_MENU, ui_container)
+	ui_container.hide()
 	
 	preview_mesh = MeshInstance3D.new()
 	get_tree().root.call_deferred("add_child", preview_mesh)

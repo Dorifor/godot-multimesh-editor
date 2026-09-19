@@ -58,11 +58,13 @@ func unlock_multimesh_node() -> void:
 
 func start_edit_action() -> void:
 	remove_active = !remove_active
+	ui_container.get_node("%EditButton").flat = !remove_active
 	if remove_active:
 		last_buffer = selected_multimesh.buffer
 		last_instance_count = selected_multimesh.instance_count
 		lock_multimesh_node()
 	else:
+		preview_mesh.hide()
 		unlock_multimesh_node()
 
 func apply_remove_action(target_position: Vector3) -> void:
@@ -72,7 +74,7 @@ func apply_remove_action(target_position: Vector3) -> void:
 	for i in selected_multimesh.instance_count:
 		var t = selected_multimesh.get_instance_transform(i)
 		var d = selected_multimesh_instance.to_global(t.origin).distance_to(target_position)
-		if d > remove_radius:
+		if d > remove_radius / 2:
 			continue
 		
 		#selected_multimesh.set_instance_transform(i, t.scaled(Vector3(1, 20, 1)))

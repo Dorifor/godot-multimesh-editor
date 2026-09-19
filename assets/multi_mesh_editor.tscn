@@ -23,6 +23,7 @@ theme_override_constants/separation = 8
 unique_name_in_owner = true
 layout_mode = 2
 text = "Effacer"
+flat = true
 
 [node name="RevertButton" type="Button" parent="HBoxContainer" unique_id=322888813]
 unique_name_in_owner = true
